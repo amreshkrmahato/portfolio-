@@ -234,7 +234,7 @@ $(document).ready(function () {
         const finishMessage = "Thank you for the info! 🎉 Let's connect on Messenger so I can provide a detailed quote and discuss your project in detail.";
         addBotMessage(finishMessage);
         
-        // Format responses for Messenger
+        // Format responses for Messenger with all answers
         const formattedResponses = `Hi Amresh! Here's my hiring inquiry:\n\n` +
             `🎯 Role: ${userResponses[0] || 'N/A'}\n` +
             `💰 Salary Range: ${userResponses[1] || 'N/A'}\n` +
@@ -242,7 +242,7 @@ $(document).ready(function () {
             `📞 Contact: ${userResponses[3] || 'N/A'}\n\n` +
             `Looking forward to connecting!`;
         
-        // Show Messenger button
+        // Show Messenger button with pre-filled message
         setTimeout(function() {
             const messengerUrl = 'https://m.me/amreshkrmahato?text=' + encodeURIComponent(formattedResponses);
             const messengerBtn = $('<button class="messenger-btn" style="margin-top:12px; width:100%; padding:10px; background:linear-gradient(180deg,#0084ff,#0073e6); color:white; border:0; border-radius:8px; cursor:pointer; font-weight:600; font-size:14px;">Connect on Messenger</button>');
