@@ -79,7 +79,7 @@
                 <div class="text-2">Backend Engineer — <span class="typing-role"></span></div>
                 <p class="text-3">I build reliable, scalable backend systems with Django, DRF, PostgreSQL, and AWS. I focus on maintainable architectures, performance, and secure APIs. Open to contract and full-time opportunities.</p>
                 <div class="home-actions">
-                    <a href="#contact" class="btn btn-primary" aria-label="Contact Amresh to hire">Hire Me</a>
+                    <button class="btn btn-primary chatbot-trigger" aria-label="Contact Amresh to hire">Hire Me</button>
                     <a href="assets/documents/resume.pdf" download class="btn btn-outline" aria-label="Download CV">Download CV</a>
                 </div>
             </div>
@@ -260,6 +260,26 @@
         </div>
     </section>
     </main>
+    <!--Chatbot Modal-->
+    <div id="chatbot-modal" class="chatbot-modal">
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h3>Let's Connect!</h3>
+                <button class="chatbot-close" aria-label="Close chatbot">&times;</button>
+            </div>
+            <div class="chatbot-body">
+                <div class="chatbot-messages">
+                    <div class="bot-message">
+                        <p>Hi! 👋 I'm Amresh's AI assistant. Let's talk about your project!</p>
+                    </div>
+                </div>
+                <div class="chatbot-input-section">
+                    <input type="text" class="chatbot-input" placeholder="Your answer..." aria-label="Chatbot input">
+                    <button class="chatbot-send" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--footer section started-->
     <footer class="footer-two">
         <div class="max-width footer-inner">
