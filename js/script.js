@@ -28,6 +28,17 @@ $(document).ready(function () {
     });
 
     // ==========================
+    // Typing Animation for Developer Role
+    // ==========================
+    var typingRole = new Typed(".typing-role", {
+        strings: ["Python Developer", "Software Engineer", "Web Designer"],
+        typeSpeed: 80,
+        backSpeed: 60,
+        backDelay: 2000,
+        loop: true
+    });
+
+    // ==========================
     // Mobile Menu Functions
     // ==========================
     function closeMenu() {
